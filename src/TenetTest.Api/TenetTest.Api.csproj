@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+        <PackageReference Include="Swashbuckle.AspNetCore" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\TenetTest.Application\TenetTest.Application.csproj" />
+        <ProjectReference Include="..\TenetTest.Contracts\TenetTest.Contracts.csproj" />
+        <ProjectReference Include="..\TenetTest.Infrastructure\TenetTest.Infrastructure.csproj" />
+    </ItemGroup>
+</Project>

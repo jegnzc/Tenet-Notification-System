@@ -1,0 +1,62 @@
+@hostname = localhost
+@port = 7250
+
+### Place Order 1
+POST https://{{hostname}}:{{port}}/api/orders
+Content-Type: application/json
+
+{
+  "OrderNumber": "ORD022",
+  "OrderDate": "2024-05-01T10:00:00Z",
+  "CustomerEmail": "jegnzc@gmail.com",
+  "CustomerName": "Jorge Gonzalez",
+  "TotalAmount": 150.15
+}
+
+### Place Order 2
+POST https://{{hostname}}:{{port}}/api/orders
+Content-Type: application/json
+
+{
+  "OrderNumber": "ORD002",
+  "OrderDate": "2024-06-30T00:00:00Z",
+  "CustomerEmail": "jegnzc@gmail.com",
+  "CustomerName": "Jane Smith",
+  "TotalAmount": 200.75
+}
+
+### Place Order 3
+POST https://{{hostname}}:{{port}}/api/orders
+Content-Type: application/json
+
+{
+  "OrderNumber": "ORD003",
+  "OrderDate": "2024-06-30T00:00:00Z",
+  "CustomerEmail": "jegnzc@gmail.com",
+  "CustomerName": "Alice Johnson",
+  "TotalAmount": 150.00
+}
+
+### Place Order 4
+POST https://{{hostname}}:{{port}}/api/orders
+Content-Type: application/json
+
+{
+  "OrderNumber": "ORD004",
+  "OrderDate": "2024-06-30T00:00:00Z",
+  "CustomerEmail": "jegnzc@gmail.com",
+  "CustomerName": "Bob Brown",
+  "TotalAmount": 175.25
+}
+
+### Place Order 5
+POST https://{{hostname}}:{{port}}/api/orders
+Content-Type: application/json
+
+{
+  "OrderNumber": "ORD005",
+  "OrderDate": "2024-06-30T00:00:00Z",
+  "CustomerEmail": "jegnzc@gmail.com",
+  "CustomerName": "Charlie Davis",
+  "TotalAmount": 220.00
+}

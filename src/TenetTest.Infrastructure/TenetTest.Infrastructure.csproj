@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <PreserveCompilationContext>true</PreserveCompilationContext>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FirebaseAdmin" />
+        <PackageReference Include="FluentEmail.MailKit" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="RazorLight" />
+        <PackageReference Include="Twilio" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\TenetTest.Application\TenetTest.Application.csproj" />
+    </ItemGroup>
+
+</Project>

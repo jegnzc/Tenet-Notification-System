@@ -1,0 +1,29 @@
+﻿version: '3.8'
+services:
+  tenetapi:
+    container_name: tenet-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001"
+      - "7250:7250"
+    env_file:
+      - .env
+    depends_on:
+      - rabbitmq
+    restart: on-failure
+    volumes:
+      - ./src/TenetTest.Api/TenetTest.db:/app/TenetTest.db
+      - ./tenettest-24b7a-2b2adb7b2feb.json:/app/tenettest-24b7a-2b2adb7b2feb.json
+      - ~/.aspnet/https:/https:ro
+
+  rabbitmq:
+    container_name: tenet-rabbitmq
+    image: "rabbitmq:3-management"
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest

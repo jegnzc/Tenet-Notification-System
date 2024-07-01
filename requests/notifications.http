@@ -1,0 +1,62 @@
+@hostname = localhost
+@port = 7250
+
+### Example 1: Send UnTemplated Email Notification
+POST https://{{hostname}}:{{port}}/api/notifications/send
+Content-Type: application/json
+
+{
+  "Recipient": "jegnzc@gmail.com",
+  "Priority": "High",
+  "Channel": "Email",
+  "Subject": "Welcome to Our Service",
+  "Body": "Hello, User1! Welcome to our service."
+}
+
+### Example 2: Send UnTemplated SMS Notification
+POST https://{{hostname}}:{{port}}/api/notifications/send
+Content-Type: application/json
+
+{
+  "Recipient": "+50247230567",
+  "Priority": "Low",
+  "Channel": "SMS",
+  "Subject": null,
+  "Body": "Your verification code is 123456."
+}
+
+### Example 3: Send UnTemplated Push Notification
+POST https://{{hostname}}:{{port}}/api/notifications/send
+Content-Type: application/json
+
+{
+  "Recipient": "cxascsdvcsdfsdasdasd",
+  "Priority": "High",
+  "Channel": "Push",
+  "Subject": "New Feature Alert",
+  "Body": "Check out our new feature now!"
+}
+
+### Example 4: Send UnTemplated Email Notification
+POST https://{{hostname}}:{{port}}/api/notifications/send
+Content-Type: application/json
+
+{
+  "Recipient": "jegnzc@gmail.com",
+  "Priority": "Low",
+  "Channel": "Email",
+  "Subject": "Weekly Newsletter",
+  "Body": "Here is our weekly newsletter."
+}
+
+### Example 5: Send UnTemplated SMS Notification
+POST https://{{hostname}}:{{port}}/api/notifications/send
+Content-Type: application/json
+
+{
+  "Recipient": "+50247230567",
+  "Priority": "High",
+  "Channel": "SMS",
+  "Subject": null,
+  "Body": "Your appointment is confirmed for tomorrow."
+}

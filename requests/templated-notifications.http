@@ -1,0 +1,72 @@
+@hostname = localhost
+@port = 7250
+
+### Example 1: Send Templated Email Notification
+POST https://{{hostname}}:{{port}}/api/notifications/send-templated
+Content-Type: application/json
+
+{
+  "Recipient": "jegnzc@gmail.com",
+  "Priority": "High",
+  "Channel": "Email",
+  "TemplateId": "cbc3395c-e3bb-4d55-908c-4c7ce53c0478",
+  "Model": {
+    "FirstName": "John"
+  }
+}
+
+### Example 2: Send Templated SMS Notification
+POST https://{{hostname}}:{{port}}/api/notifications/send-templated
+Content-Type: application/json
+
+{
+  "Recipient": "+50247230567",
+  "Priority": "Low",
+  "Channel": "SMS",
+  "TemplateId": "18d059b8-ea89-447e-8737-770bfc39c460",
+  "Model": {
+    "FirstName": "Doe"
+  }
+}
+
+### Example 3: Send Templated Push Notification
+POST https://{{hostname}}:{{port}}/api/notifications/send-templated
+Content-Type: application/json
+
+{
+  "Recipient": "cxascsdvcsdfsdasdasd",
+  "Priority": "High",
+  "Channel": "Push",
+  "TemplateId": "b8619fd4-0acf-4937-8f1a-573519f22ee0",
+  "Model": {
+    "FirstName": "Alice"
+  }
+}
+
+### Example 4: Send Templated Email Notification
+POST https://{{hostname}}:{{port}}/api/notifications/send-templated
+Content-Type: application/json
+
+{
+  "Recipient": "jegnzc@gmail.com",
+  "Priority": "Low",
+  "Channel": "Email",
+  "TemplateId": "a93c032a-22f1-419d-a659-8af289e30c0d",
+  "Model": {
+    "FirstName": "Ernest Jones"
+  }
+}
+
+### Example 5: Send Templated SMS Notification
+POST https://{{hostname}}:{{port}}/api/notifications/send-templated
+Content-Type: application/json
+
+{
+  "Recipient": "+50247230567",
+  "Priority": "High",
+  "Channel": "SMS",
+  "TemplateId": "fcc69863-e92f-40d8-9e3d-18bc5af18845",
+  "Model": {
+    "FirstName": "Charlie"
+  }
+}
