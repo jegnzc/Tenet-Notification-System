@@ -10,17 +10,8 @@ using TenetTest.Domain.Templates;
 
 namespace TenetTest.Application.Orders.Events;
 
-public class OrderPlacedEventHandler : INotificationHandler<OrderPlacedEvent>
+public class OrderPlacedEventHandler(IPublishEndpoint _publishEndpoint) : INotificationHandler<OrderPlacedEvent>
 {
-    private readonly IMediator _mediator;
-    private readonly IPublishEndpoint _publishEndpoint;
-
-    public OrderPlacedEventHandler(IMediator mediator, IPublishEndpoint publishEndpoint)
-    {
-        _mediator = mediator;
-        _publishEndpoint = publishEndpoint;
-    }
-
     // Created to showcase Event Sourcing
     public async Task Handle(OrderPlacedEvent notification, CancellationToken cancellationToken)
     {

@@ -6,7 +6,7 @@ POST https://{{hostname}}:{{port}}/api/orders
 Content-Type: application/json
 
 {
-  "OrderNumber": "ORD022",
+  "OrderNumber": "ORD023",
   "OrderDate": "2024-05-01T10:00:00Z",
   "CustomerEmail": "jegnzc@gmail.com",
   "CustomerName": "Jorge Gonzalez",
@@ -54,7 +54,7 @@ POST https://{{hostname}}:{{port}}/api/orders
 Content-Type: application/json
 
 {
-  "OrderNumber": "ORD005",
+  "OrderNumber": "ORD105",
   "OrderDate": "2024-06-30T00:00:00Z",
   "CustomerEmail": "jegnzc@gmail.com",
   "CustomerName": "Charlie Davis",

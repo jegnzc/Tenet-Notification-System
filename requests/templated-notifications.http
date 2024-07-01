@@ -11,7 +11,7 @@ Content-Type: application/json
   "Channel": "Email",
   "TemplateId": "cbc3395c-e3bb-4d55-908c-4c7ce53c0478",
   "Model": {
-    "FirstName": "John"
+    "FirstName": "Melanie"
   }
 }
 
@@ -34,12 +34,12 @@ POST https://{{hostname}}:{{port}}/api/notifications/send-templated
 Content-Type: application/json
 
 {
-  "Recipient": "cxascsdvcsdfsdasdasd",
+  "Recipient": "fXC0dzkqDu9xUMUmndlmMD:APA91bF96d55BCQDNqbxC2JEM_mNbYITPHQDqa_7vcc_eJ1ok0FkXtiIEqwPkwrrYAinvXAIxVcVd5s4XB3VdSwcovP5vd4DVafWCdEj6sENxQOV9iqOfqOMFAeEiHUkhyR5IG2z6v3s",
   "Priority": "High",
   "Channel": "Push",
   "TemplateId": "b8619fd4-0acf-4937-8f1a-573519f22ee0",
   "Model": {
-    "FirstName": "Alice"
+    "FirstName": "Jorge"
   }
 }
 
@@ -53,7 +53,7 @@ Content-Type: application/json
   "Channel": "Email",
   "TemplateId": "a93c032a-22f1-419d-a659-8af289e30c0d",
   "Model": {
-    "FirstName": "Ernest Jones"
+    "FirstName": "Pedro Lopez"
   }
 }
 

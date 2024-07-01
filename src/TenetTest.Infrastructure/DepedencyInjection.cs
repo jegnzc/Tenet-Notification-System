@@ -114,6 +114,7 @@ public static class DependencyInjection
 
     public static IServiceCollection AddMassTransitWithRabbitMQ(this IServiceCollection services, IConfiguration configuration)
     {
+        // Can implement a more complex configuration here, like retry policies, for better reliability.
         services.AddMassTransit(x =>
         {
             x.AddConsumer<ProcessSendNotificationConsumer>();
@@ -121,8 +122,7 @@ public static class DependencyInjection
 
             x.UsingRabbitMq((context, cfg) =>
             {
-                //cfg.Host(configuration["RabbitMQ:Host"]!, h =>
-                cfg.Host("localhost", h =>
+                cfg.Host(configuration["RabbitMQ:Host"]!, h =>
                 {
                     h.Username(configuration["RabbitMQ:Username"]!);
                     h.Password(configuration["RabbitMQ:Password"]!);
