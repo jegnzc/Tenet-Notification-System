@@ -42,6 +42,10 @@ public class TemplateService : ITemplateService
 
                 body = await _razorEngine.CompileRenderStringAsync($"{templateId}-body", body, model);
             }
+            catch (KeyNotFoundException ex)
+            {
+                return Error.NotFound(code: "Template.RequiredFieldsMissing", description: ex.Message);
+            }
             catch (Exception ex)
             {
                 return Error.Failure(description: $"Failed to render template for channel {channel.Name}: {ex.Message}");
