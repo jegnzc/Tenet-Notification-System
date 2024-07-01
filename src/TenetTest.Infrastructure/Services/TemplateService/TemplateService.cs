@@ -44,7 +44,7 @@ public class TemplateService : ITemplateService
             }
             catch (KeyNotFoundException ex)
             {
-                return Error.NotFound(code: "Template.RequiredFieldsMissing", description: ex.Message);
+                return Error.Conflict(code: "Template.RequiredFieldsMissing", description: ex.Message);
             }
             catch (Exception ex)
             {
