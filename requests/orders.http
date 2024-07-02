@@ -6,10 +6,10 @@ POST https://{{hostname}}:{{port}}/api/orders
 Content-Type: application/json
 
 {
-  "OrderNumber": "ORD023",
+  "OrderNumber": "ORD0203",
   "OrderDate": "2024-05-01T10:00:00Z",
-  "CustomerEmail": "jegnzc@gmail.com",
-  "CustomerName": "Jorge Gonzalez",
+  "CustomerEmail": "jegnzc.tests@gmail.com",
+  "CustomerName": "Carlos Perez",
   "TotalAmount": 150.15
 }
 
@@ -18,11 +18,11 @@ POST https://{{hostname}}:{{port}}/api/orders
 Content-Type: application/json
 
 {
-  "OrderNumber": "ORD002",
+  "OrderNumber": "ORD0121",
   "OrderDate": "2024-06-30T00:00:00Z",
-  "CustomerEmail": "jegnzc@gmail.com",
-  "CustomerName": "Jane Smith",
-  "TotalAmount": 200.75
+  "CustomerEmail": "jegnzc.tests@gmail.com",
+  "CustomerName": "Pedro Ruiz",
+  "TotalAmount": 1250.75
 }
 
 ### Place Order 3

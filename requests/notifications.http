@@ -30,7 +30,7 @@ POST https://{{hostname}}:{{port}}/api/notifications/send
 Content-Type: application/json
 
 {
-  "Recipient": "fXC0dzkqDu9xUMUmndlmMD:APA91bF96d55BCQDNqbxC2JEM_mNbYITPHQDqa_7vcc_eJ1ok0FkXtiIEqwPkwrrYAinvXAIxVcVd5s4XB3VdSwcovP5vd4DVafWCdEj6sENxQOV9iqOfqOMFAeEiHUkhyR5IG2z6v3s",
+  "Recipient": "test4",
   "Priority": "High",
   "Channel": "Push",
   "Subject": "New Feature Alert",

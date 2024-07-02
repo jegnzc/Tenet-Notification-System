@@ -29,8 +29,6 @@ public class SendNotificationCommandHandler(
             return addContentResult.Errors;
         }
 
-        await _notificationsRepository.AddAsync(notification);
-
         var sendNotificationMessage = new
         {
             NotificationId = notification.Id,
