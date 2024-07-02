@@ -9,7 +9,7 @@ services:
       - "5001:5001"
       - "7250:7250"
     env_file:
-      - .env
+      - ./src/TenetTest.Api/.env
     depends_on:
       - rabbitmq
     restart: on-failure
